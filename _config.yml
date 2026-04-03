@@ -1,5 +1,52 @@
-remote_theme: pages-themes/hacker@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+# Site settings
 title: Parth Jivaraj Khedekar
-description: Junior Dev Exploring Industry while learning new things.
+description: Junior Dev building things and learning everything.
+url: "https://parthkhedekar.github.io" # replace with your GitHub Pages URL
+baseurl: "" # leave empty if hosted at root
+
+# Author
+author:
+  name: Parth Jivaraj Khedekar
+  email: your@email.com # replace with your email
+  github: your-github-username # replace with your GitHub username
+  linkedin: your-linkedin-username # replace with your LinkedIn username
+
+# Theme
+remote_theme: pages-themes/minima@v2.5.1
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Navigation
+header_pages:
+  - work.md
+  - about.md
+  - blog.md
+  - contact.md
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# SEO & meta
+tagline: "Junior Dev · Explorer · Learner"
+lang: en
+
+# Sass
+sass:
+  style: compressed
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/
+  - vendor/
