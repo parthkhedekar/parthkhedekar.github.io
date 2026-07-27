@@ -153,12 +153,12 @@ const Home = () => {
               <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
               Recent projects
             </div>
-            <a
+            <Link
               className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700 pr-1.5"
-              href="/projects"
+              to="/projects"
             >
               See all projects
-            </a>
+            </Link>
           </div>
 
           <div className="space-y-4 rounded-3xl border border-slate-200 bg-white/95 p-6 shadow-sm">
