@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -29,7 +29,7 @@ const NotFound = () => (
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="flex min-h-screen flex-col bg-slate-50 text-slate-900">
         <Navbar />
 
@@ -47,7 +47,7 @@ const App = () => {
 
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
