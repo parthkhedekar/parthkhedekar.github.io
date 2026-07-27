@@ -117,7 +117,7 @@ const Home = () => {
             </div>
             <a
               className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700 pr-1.5"
-              href="#work"
+              href="/work"
             >
               See all work
             </a>
@@ -155,7 +155,7 @@ const Home = () => {
             </div>
             <a
               className="text-sm font-semibold text-emerald-600 transition hover:text-emerald-700 pr-1.5"
-              href="#projects"
+              href="/projects"
             >
               See all projects
             </a>
